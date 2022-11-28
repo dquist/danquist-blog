@@ -1,6 +1,8 @@
 [build]
-  publish = "public"
-  command = "yarn build"
+  publish = "docs/.vitepress/dist"
+  command = "yarn docs:build"
 [build.environment]
-  YARN_VERSION = "1.3.2"
+  NETLIFY_USE_YARN = "true"
+  NODE_VERSION = "18.12.1"
+  YARN_VERSION = "1.22.19"
   YARN_FLAGS = "--no-ignore-optional"
